@@ -16,26 +16,26 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | MO1 | SPC |   | ENT | MO2  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC 
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT 
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp LALT
                         >;
                 };
 
                 layer_1 {
 // -----------------------------------------------------------------------------------------
-// |  TAB | PGDN |     |  UP |     | PGUP |   | INS |  `  |  -  |  =  |  \  | BKSP |
-// | CTRL |      | LFT | DWN | RGT |      |   | DEL |  ~  |  _  |  +  |  |  |      |
-// | SHFT | HOME |     |     |     | END  |   |     |     |     |     |     |      |
+// |  TAB | PGDN |     |  UP |     | PGUP |   | INS |     |     |     |     | BKSP |
+// | CTRL |      | LFT | DWN | RGT |      |   | DEL | skC | skA | skS | skG |      |
+// | SHFT |  skC | skA | skS | skG |      |   | ESC |     |     |     |     |      |
 //                     | GUI |     | SPC  |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp PG_DN       &trans       &kp UP       &trans       &kp PG_UP       &kp INS     &kp GRAVE  &kp MINUS   &kp EQUAL    &kp BSLH     &kp BSPC
-   &kp LCTRL  &trans          &kp LEFT     &kp DOWN     &kp RIGHT    &trans          &kp DEL     &kp TILDE  &kp UNDER   &kp PLUS     &kp PIPE     &trans
-   &kp LSHFT  &kp HOME        &trans       &trans       &trans       &kp END         &trans      &trans     &trans      &trans       &trans       &trans
+   &kp TAB    &kp PG_DN    &trans       &kp UP       &trans       &kp PG_UP       &kp INS     &trans     &trans   &trans     &trans     &kp BSPC
+   &kp LCTRL  &kp END      &kp LEFT     &kp DOWN     &kp RIGHT    &kp HOME        &kp DEL     &sk LCTRL  &sk LALT &sk LSHIFT &sk LGUI   &trans
+   &kp LSHFT  &sk LCTRL    &sk LALT     &sk LSHIFT   &sk LGUI     &trans          &kp ESC     &trans     &trans   &trans     &trans     &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -44,21 +44,21 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL |     |  (  |  [  |  {  |     |   |     |  }  |  ]  |  )  |     |      |
-// | SHFT | skC | skA | skS | skG |     |   |     |     |     |     |     |      |
+// | SHFT |  ~  |  `  |  _  |  -  |     |   |     |  +  |  =  |  \  |  |  |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6       &kp N7      &kp N8             &kp N9        &kp N0      &kp BSPC
-   &kp LCTRL  &trans       &kp LPAR     &kp LBKT     &kp LBRC     &trans         &trans       &kp RBRC    &kp RBKT           &kp RPAR      &trans      &trans
-   &kp LSHFT  &sk LCTRL    &sk LALT     &sk LSHIFT   &sk LGUI     &trans         &trans       &trans      &trans             &trans        &trans      &trans
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6       &kp N7      &kp N8      &kp N9        &kp N0      &kp BSPC
+   &kp LCTRL  &trans       &kp LPAR     &kp LBKT     &kp LBRC     &trans         &trans       &kp RBRC    &kp RBKT    &kp RPAR      &trans      &trans
+   &kp LSHFT  &kp TILDE    &kp GRAVE    &kp UNDER    &kp MINUS    &trans         &trans       &kp PLUS    &kp EQUAL   &kp BSLH      &kp PIPE    &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
                 layer_3 {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !     |  @    |  #     |  $      |  %     |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |        |       |        |         |        |   |     |     |     |     |     |      |
-// | SHFT |  Undo  |  Cut  |  Copy  |  Paste  |  Redo  |   |     |     |     |     |     |      |
+// |  TAB |  !     |  @    |  #     |  $      |  %     |   |  ^   |  &   |  *   |  (   |  )   | BKSP  |
+// | CTRL |  F1    |  F2   |  F3    |  F4     |  F5    |   |  F6  |  F7  |  F8  |  F9  |  F10 |  F11  |
+// | SHFT |  Undo  |  Cut  |  Copy  |  Paste  |  Redo  |   |BTCLR | BT 0 | BT 1 | BT 2 | BT 3 | BT 4  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB   &kp EXCL     &kp AT    &kp HASH     &kp DLLR      &kp PRCNT       &kp CARET    &kp AMPS     &kp KP_MULTIPLY &kp LPAR        &kp RPAR       &kp BSPC
