@@ -59,12 +59,12 @@
 // |  TAB |  !     |  @    |  #     |  $      |  %     |   |  ^   |  &   |  *   |  (   |  )   | BKSP  |
 // | CTRL |  F1    |  F2   |  F3    |  F4     |  F5    |   |  F6  |  F7  |  F8  |  F9  |  F10 |  F11  |
 // | SHFT |  Undo  |  Cut  |  Copy  |  Paste  |  Redo  |   |BTCLR | BT 0 | BT 1 | BT 2 | BT 3 | BT 4  |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI |     | SPC |   | ENT |     | OUT |
                         bindings = <
    &kp TAB   &kp EXCL     &kp AT    &kp HASH     &kp DLLR      &kp PRCNT       &kp CARET    &kp AMPS     &kp KP_MULTIPLY &kp LPAR        &kp RPAR       &kp BSPC
    &kp LCTRL &kp F1       &kp F2    &kp F3       &kp F4        &kp F5          &kp F6       &kp F7       &kp F8          &kp F9          &kp F10        &kp F11
    &kp LSHFT &kp K_UNDO   &kp K_CUT &kp K_COPY   &kp K_PASTE   &kp K_REDO      &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4
-                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &out OUT_TOG
                         >;
                 };
 
