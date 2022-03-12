@@ -30,12 +30,12 @@
                 layer_1 {
 // -----------------------------------------------------------------------------------------
 // |  TAB | PGDN |     |  UP |     | PGUP |   | INS |     |     |     |     | BKSP |
-// | CTRL |  ESC | LFT | DWN | RGT |      |   | DEL | skC | skA | skS | skG |      |
+// | CTRL |  ESC | LFT | DWN | RGT | SCRN |   | DEL | skC | skA | skS | skG |      |
 // | SHFT |  skC | skA | skS | skG |      |   |     |     |     |     |     |      |
 //                     | GUI |     | SPC  |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp PG_DN    &trans       &kp UP       &trans       &kp PG_UP   &kp INS     &trans     &trans   &trans     &trans     &kp BSPC
-   &kp LCTRL  &kp ESC      &kp LEFT     &kp DOWN     &kp RIGHT    &trans      &kp DEL     &sk LCTRL  &sk LALT &sk LSHIFT &sk LGUI   &trans
+   &kp LCTRL  &kp ESC      &kp LEFT     &kp DOWN     &kp RIGHT    &kp PSCRN   &kp DEL     &sk LCTRL  &sk LALT &sk LSHIFT &sk LGUI   &trans
    &kp LSHFT  &sk LCTRL    &sk LALT     &sk LSHIFT   &sk LGUI     &trans      &trans      &trans     &trans   &trans     &trans     &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
