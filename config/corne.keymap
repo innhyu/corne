@@ -35,7 +35,7 @@
 //                     | GUI |     | SPC  |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp PG_DN    &trans       &kp UP       &trans       &kp PG_UP   &kp INS     &trans     &trans   &trans     &trans     &kp BSPC
-   &kp LCTRL  &kp ESC      &kp LEFT     &kp DOWN     &kp RIGHT    &kp PSCRN   &kp DEL     &sk LCTRL  &sk LALT &sk LSHIFT &sk LGUI   &trans
+   &kp LCTRL  &kp ESC      &kp LEFT     &kp DOWN     &kp RIGHT    &kp PSCRN   &kp DEL     &sk LCTRL  &sk LALT &sk LSHIFT &sk LGUI   &transj
    &kp LSHFT  &sk LCTRL    &sk LALT     &sk LSHIFT   &sk LGUI     &trans      &trans      &trans     &trans   &trans     &trans     &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
@@ -45,7 +45,7 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL |     |  (  |  [  |  {  |     |   |     |  }  |  ]  |  )  |  :  |   "  |
-// | SHFT |  ~  |  `  |  _  |  -  |     |   |     |  +  |  =  |  \  |  |  |      |
+// | MO 4 |  ~  |  `  |  _  |  -  |     |   |     |  +  |  =  |  \  |  |  | MO 4 |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6       &kp N7      &kp N8      &kp N9        &kp N0      &kp BSPC
@@ -68,6 +68,21 @@
                            &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &out OUT_TOG
                         >;
                 };
+
+                 layer_4 {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |  <  |  >  |  ?  |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans  &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans     &trans    &trans
+   &trans  &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans     &trans    &trans
+   &trans  &trans    &trans    &trans    &trans    &trans      &trans    &trans   &kp LT   &kp GT     &kp QMARK &trans
+                                   &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                        >;
+                };
+
 
         };				
 
