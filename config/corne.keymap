@@ -18,7 +18,7 @@
          
                label = "HOLD_SHIFT";
          
-               #binding-cells = <2>;
+               #binding-cells = <3>;
          
                tapping-term-ms = <100>;    // <---[[moderate duration]]
          
