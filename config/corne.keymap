@@ -24,7 +24,7 @@
          
                quick-tap-ms = <0>;
          
-               flavor = "balanced";
+               flavor = "tap-preferred";
          
                bindings = <&kp>, <&kp>;
          
