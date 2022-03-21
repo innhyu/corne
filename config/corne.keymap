@@ -107,9 +107,9 @@
         
         combo_layer4 {
         
-            timeout-ms = <20>;
+            timeout-ms = <150>;
         
-            key-positions = <38 39>;
+            key-positions = <36 41>;
         
             bindings = <&mo 4>;
         
